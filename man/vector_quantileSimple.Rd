@@ -8,8 +8,6 @@ vector_quantileSimple(
   vec,
   quants,
   quants.names = (quants * 100) \%>\% as.character() \%>\% paste0(., "\%"),
-  fixLowerThanFirst = TRUE,
-  fixHigherThanLast = TRUE,
   ...
 )
 }
@@ -21,16 +19,10 @@ tip: you can use the 'seq' function to generate this.}
 
 \item{quants.names}{the names to be applied to the quantiles.}
 
-\item{fixLowerThanFirst}{if values are lower than the first quantile (supose to be the lowest)
-that values will be assigned to that quantile.}
-
-\item{fixHigherThanLast}{if values are higher than the last quantile (supose to be the highest)
-that values will be assigned the that quantile.}
-
 \item{...}{options to be passed to stats::quantile (na.rm=TRUE is passed by default).}
 }
 \value{
-a character vector.
+a list with params to be passed to predict method.
 }
 \description{
 does a simple quantilization of the input vector.
