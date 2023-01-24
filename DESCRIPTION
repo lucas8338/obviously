@@ -1,6 +1,6 @@
 Package: obviously
 Title: factorization of data.
-Version: 2.0.0.0
+Version: 2.1.0.0
 Authors@R: 
     person("Lucas", "Monteiro", , "lucas.ma8338@gmail.com", role = c("aut", "cre"))
 Description: this package does a factorization of data.
