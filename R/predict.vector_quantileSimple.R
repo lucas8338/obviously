@@ -18,15 +18,15 @@ predict.vector_quantileSimple<- function(model, vec, fixLowerThanFirst=TRUE, fix
 
   # fix quantiles lower than the first
   if ( fixLowerThanFirst==TRUE ){
-    data.copy[ which(data <= quantiles[1]) ]<- names(quantiles)[1]
+    data.copy[ which(data <= quantiles[1]) ]<- glue::glue("({quantiles[1]}]")
   }
   # fix quantiles highes than the last
   if ( fixHigherThanLast==TRUE ){
-    data.copy[ which(data >= quantiles[length(quantiles)]) ]<- names(quantiles)[length(quantiles)]
+    data.copy[ which(data >= quantiles[length(quantiles)]) ]<- glue::glue("[{quantiles[length(quantiles)]})")
   }
   # apply the quantilization itself
   for ( i in 2:(length(quantiles)) ){
-    data.copy[ which(data <= quantiles[i] & data > quantiles[i-1]) ]<- names(quantiles)[i]
+    data.copy[ which(data > quantiles[i-1] & data <= quantiles[i]) ]<- glue::glue("]{quantiles[i-1]}, {quantiles[i]}]")
   }
 
   data.copy

@@ -4,20 +4,13 @@
 \alias{vector_quantileSimple}
 \title{vector_quantileSimple}
 \usage{
-vector_quantileSimple(
-  vec,
-  quants,
-  quants.names = (quants * 100) \%>\% as.character() \%>\% paste0(., "\%"),
-  ...
-)
+vector_quantileSimple(vec, quants, ...)
 }
 \arguments{
 \item{vec}{a numeric vector.}
 
 \item{quants}{the split values for the quantilization, must be velues between 0 and 1.
 tip: you can use the 'seq' function to generate this.}
-
-\item{quants.names}{the names to be applied to the quantiles.}
 
 \item{...}{options to be passed to stats::quantile (na.rm=TRUE is passed by default).}
 }
