@@ -12,7 +12,6 @@ vector_quantileSimple<- function(vec, quants, ...){
   data.copy<- data
 
   quantiles<- stats::quantile(data,probs=quants,na.rm = TRUE, ...)
-  names(quantiles)<- quants.names
 
   result<- list('quantiles'=quantiles)
 
