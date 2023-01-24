@@ -25,5 +25,5 @@ tip: you can use the 'seq' function to generate this.}
 a list with params to be passed to predict method.
 }
 \description{
-does a simple quantilization of the input vector.
+does a simple quantilization (quantile classification) of the input vector.
 }

@@ -4,10 +4,10 @@
 \alias{predict.vector_quantileSimple}
 \title{predict.vector_quantileSimple}
 \usage{
-\method{predict}{vector_quantileSimple}(object, vec, fixLowerThanFirst = TRUE, fixHigherThanLast = TRUE)
+\method{predict}{vector_quantileSimple}(model, vec, fixLowerThanFirst = TRUE, fixHigherThanLast = TRUE)
 }
 \arguments{
-\item{object}{the fitted model data.}
+\item{model}{the fitted model data.}
 
 \item{vec}{a numeric vector.}
 

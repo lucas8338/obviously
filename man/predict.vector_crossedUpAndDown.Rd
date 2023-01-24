@@ -4,10 +4,10 @@
 \alias{predict.vector_crossedUpAndDown}
 \title{predict.vector_crossedUpAndDown}
 \usage{
-\method{predict}{vector_crossedUpAndDown}(object, vec)
+\method{predict}{vector_crossedUpAndDown}(model, vec)
 }
 \arguments{
-\item{object}{the params from the fitted.}
+\item{model}{the params from the fitted.}
 
 \item{vec}{the vector to be applied}
 }

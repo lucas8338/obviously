@@ -2,6 +2,7 @@
 
 S3method(predict,vector_crossedUpAndDown)
 S3method(predict,vector_quantileSimple)
+export(vector_asNearestValue)
 export(vector_crossedUpAndDown)
 export(vector_quantileSimple)
 import(dplyr)
